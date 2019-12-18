@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../poc-stripe-checkout-client.js';
+
+<Meta 
+  title="PocStripeCheckoutClient"
+  parameters={{
+    component: "poc-stripe-checkout-client",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# PocStripeCheckoutClient
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add poc-stripe-checkout-client
+```
+
+```js
+import 'poc-stripe-checkout-client/poc-stripe-checkout-client.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <poc-stripe-checkout-client></poc-stripe-checkout-client>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="poc-stripe-checkout-client" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <poc-stripe-checkout-client .title=${'Hello World'}></poc-stripe-checkout-client>
+  `}
+</Story>
